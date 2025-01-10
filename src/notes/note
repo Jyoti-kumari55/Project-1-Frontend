@@ -1,0 +1,154 @@
+// allProduct toggle button
+<div
+    className="px-2 py-2"
+    style={{
+    width: "2.5rem",
+    height: "2.5rem",
+    borderRadius: "1.2rem",
+    backgroundColor: "white",
+    position: "absolute",
+    top: "20px",
+    right: "30px",
+    zIndex: 10,
+    }}
+>
+
+{/* <i style={{
+backgroundColor: bgBtnColor ? "white" : "red",
+position: "absolute",
+top: "10px",
+right: "20px",
+zIndex: 10,
+}}
+className="bi bi-heart " 
+onClick={() => setBgBtnColor(!bgBtnColor)} ></i> */}
+
+        <ion-icon
+        name="heart-outline"
+        style={{
+            width: "1.4rem",
+            height: "1.4rem",
+            backgroundColor: bgBtnColor[cloth.id]
+            ? "red"
+            : "white",
+        }}
+        onClick={() => whislistBtnToggler(cloth.id)}
+        ></ion-icon>
+
+
+{/* <img src="https://assets.ajio.com/static/img/pdp-wishlist-icon-desktop.svg" alt="fav"
+style={{width: "1.4rem", height: "1.4rem", backgroundColor: bgBtnColor ? "white" : "red"}}
+onClick={() => setBgBtnColor(!bgBtnColor)} /> */}
+
+     </div>
+
+// cart
+
+       {/* <div className="container">
+        {alertState && (
+          <div className="alert alert-success" role="alert">
+            {alertState}
+          </div>
+        )}
+        <p className="fs-2">
+          Cart{" "}
+          <span className="fs-4">
+            {" "}
+            ({cartItems && cartItems.length} products){" "}
+          </span>
+        </p>
+        {cartItems.length > 0 ? (
+          <div className="row">
+            {status === "loading" && <p>Loading cart products...</p>}
+            {error && (
+              <p>An error occured while fetching the cart products- {error}</p>
+            )}
+            {cartItems?.map((item) => (
+              <div className="col-md-4" key={item.productId._id}>
+                <div className="card border-0">
+                  <div className="text-center">
+                    {" "}
+                    <img
+                      src={item.productId.imageUrl}
+                      alt={item.productId.name}
+                      style={{ width: "200px" }}
+                      className="card-img-top"
+                    />
+                  </div>
+                  <div className="card-body text-center">
+                    <p className="card-title">{item.productId.name}</p>
+                    <p>${item.productId.price}</p>
+
+                    <p>
+                      <button
+                        onClick={() => decrementHandler(item.productId._id)}
+                        className="border-0 btn mx-3"
+                      >
+                        {" "}
+                        -{" "}
+                      </button>
+
+                      <button className="btn btn-light">
+                        {" "}
+                        Qty: {item.quantity}
+                      </button>
+                      <button
+                        onClick={() => incrementHandler(item.productId._id)}
+                        className="border-0 btn mx-3"
+                      >
+                        {" "}
+                        +{" "}
+                      </button>
+                    </p>
+                    <button
+                      onClick={() => removeFromCartHandler(item.productId._id)}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p>Your cart is empty.</p>
+        )}
+
+        <div className="container d-flex justify-content-between ">
+          <div className="col-md-6 pe-2">
+            <AddressView />
+          </div>
+        </div>
+      </div> */}
+
+
+// allProduct icon 
+
+        {/* <div
+            className="px-2 py-2"
+            style={{
+              position: "absolute",
+              top: "20px",
+              right: "30px",
+              zIndex: 10,
+            }}>
+            <ion-icon
+              name={
+                wishlistStates[cloth._id]
+                  ? "heart"
+                  : "heart-outline"
+              } // Change icon based on state
+              style={{
+                width: "1.4rem",
+                height: "1.4rem",
+                color: wishlistStates[cloth._id]
+                  ? "red"
+                  : "white",
+              }}
+              onClick={() => {
+                whislistBtnToggler(cloth._id);
+                addToWhistlistHandler(cloth); // Add to wishlist
+              }}
+            ></ion-icon>
+          </div> 
+      */}
